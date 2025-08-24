@@ -30,14 +30,14 @@ body{
     left: 0;
     right: 0;
     top:260px;
-    border:1px solid black;
+    
 }
 .body{
     position: absolute;
     height:65px;
     width:100px;
     background-color: #ffec02;
-    border-radius: 100px 100px;
+    border-radius: 100px 100px 0 0;
     top:-2px;
     animation: body-walk 0.8s infinite;
 }
@@ -152,7 +152,6 @@ body{
     position: absolute;
     top:-20px;
     left:30px;
-
     transform: rotate(-15deg);
 }
 .feather:before{
@@ -228,12 +227,12 @@ body{
     animation: cloud 10s 5s infinite linear;
 }
 .cloud4{
-    top:120px;
+    top:300px;
     animation: cloud 10s 12s infinite linear;
 }
 
 @keyframes cloud{
     100%{
-        transform: translate(calc(-100vw - 130px));
+        transform: translateX(calc(-100vw - 130px));
     }
 }
